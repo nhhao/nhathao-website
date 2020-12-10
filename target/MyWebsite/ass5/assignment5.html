@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../normalize.css" />
+        <link rel="stylesheet" href="../style.css" />
+
+        <title>Assignment 1 | nhathao</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="./index.html">nhathao<span>.tech</span></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li>
+                        <a href="./about-me.html" class="active">About me</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="assignment">
+            <form name="meo" action="/src/main/java/assignment5" method="post">
+                <h2>Enter Your Information</h2>
+
+                <table cellspacing="5">
+                    <tr>
+                        <td align="right">
+                            Number to purchase:<br />
+                            (at least 1)
+                        </td>
+                        <td>
+                            <input
+                                type="number"
+                                name="quantity"
+                                min="1"
+                                value="1"
+                                required="required"
+                            />*
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">Your name:</td>
+                        <td>
+                            <input
+                                type="text"
+                                name="customerName"
+                                required="required"
+                            />*
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            Your phone:<br />
+                            (in format xxx-xxx-xxxx)
+                        </td>
+                        <td>
+                            <input
+                                type="text"
+                                name="customerPhone"
+                                maxlength="12"
+                                required="required"
+                            />*
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">Your email:</td>
+                        <td>
+                            <input type="text" name="customerEmail" /><i
+                                >(optional)</i
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Credit Information</td>
+                        <td>
+                            Number:<input
+                                type="text"
+                                name="CreditNum"
+                                required="required"
+                                maxlength="16"
+                            />*
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Expiration Date:
+                            <input
+                                type="number"
+                                name="expMonthCredit"
+                                min="1"
+                                max="12"
+                                required="required"
+                                value="1"
+                            />
+                            <input
+                                type="number"
+                                name="expYearCredit"
+                                min="2000"
+                                max="2100"
+                                required="required"
+                                value="2000"
+                            />
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Processor</th>
+                        <th>Accessories</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input
+                                type="radio"
+                                name="processor"
+                                value="Celeron D"
+                                checked
+                            />
+                            Celeron D<br />
+                            <input
+                                type="radio"
+                                name="processor"
+                                value="Pentium IV"
+                            />
+                            Pentium IV<br />
+                            <input
+                                type="radio"
+                                name="processor"
+                                value="Pentium D"
+                            />
+                            Pentium D
+                        </td>
+                        <td>
+                            <input type="checkbox" name="monitor" />
+                            Monitor
+                            <br />
+                            <select name="listname" size="3">
+                                <option value="Camera" selected>Camera</option>
+                                <option value="Printer">Printer</option>
+                                <option value="Scanner">Scanner</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <br /><br /><input
+                                type="submit"
+                                value="Configure"
+                            />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </main>
+    </body>
+</html>

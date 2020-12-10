@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./normalize.css" />
+        <link rel="stylesheet" href="./style.css" />
+
+        <title>Assignment 2.2 | nhathao</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="./index.html">nhathao<span>.tech</span></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="" class="active">About me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="assignment assignment2-2">
+            <p class="description">
+                OK, would you like to drink something? It's now free so let's
+                have some fun!! (Hold Ctrl/Command and click for multiple
+                choice) :)
+            </p>
+            <div class="container">
+                <form action="./assignment2-2-result.jsp">
+                    <div>
+                        <p>Choose one or more type of drinks you want:</p>
+                        <select name="drinks" id="drinks" multiple>
+                            <option value="Sugar coffee">Sugar coffee</option>
+                            <option value="Non-sugar coffee">
+                                Non-sugar coffee
+                            </option>
+                            <option value="Lemon tea">Lemon tea</option>
+                            <option value="Mango-juice">Mango-juice</option>
+                            <option value="Milk-tea">Milk-tea</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p class="description">Select optional:</p>
+                        <label class="container">
+                            <input type="checkbox" name="more-sugar" />
+                            <span class="text">More sugar</span>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">
+                            <input type="checkbox" name="more-ice" />
+                            <span class="text">More ice</span>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">
+                            <input type="checkbox" name="straws" />
+                            <span class="text">Give me one more straw</span>
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <p class="description">Select payment method:</p>
+
+                        <label class="container">
+                            <input
+                                type="radio"
+                                name="payment-method"
+                                value="via Airpay"
+                            />
+                            <span class="text">Airpay</span>
+                            <span class="checkmark radio"></span>
+                        </label>
+                        <label class="container">
+                            <input
+                                type="radio"
+                                name="payment-method"
+                                value="via Momo"
+                            />
+                            <span class="text">Momo</span>
+                            <span class="checkmark radio"></span>
+                        </label>
+                        <label class="container">
+                            <input
+                                type="radio"
+                                name="payment-method"
+                                checked="checked"
+                                value="offline"
+                            />
+                            <span class="text">Offline</span>
+                            <span class="checkmark radio"></span>
+                        </label>
+                    </div>
+                    <button type="submit">It's free :)</button>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
